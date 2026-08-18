@@ -1,0 +1,253 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0a0a0a;
+  color: #f0f0f0;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+[data-theme="light"] body {
+  background-color: #f8f9fa;
+  color: #1a1a2e;
+}
+
+[data-theme="light"] ::-webkit-scrollbar-track {
+  background: #e5e7eb;
+}
+[data-theme="light"] ::-webkit-scrollbar-thumb {
+  background: #9ca3af;
+}
+[data-theme="light"] ::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #111;
+}
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-accent-light to-mint bg-clip-text text-transparent;
+  }
+  .glass {
+    @apply bg-white/[0.03] backdrop-blur-xl border border-white/[0.06];
+  }
+  .glass-strong {
+    @apply bg-white/[0.05] backdrop-blur-2xl border border-white/[0.08];
+  }
+  .glow {
+    box-shadow: 0 0 60px rgba(99, 102, 241, 0.08), 0 0 120px rgba(99, 102, 241, 0.04);
+  }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  33% { transform: translateY(-12px) rotate(1deg); }
+  66% { transform: translateY(-6px) rotate(-1deg); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes grain {
+  0%, 100% { transform: translate(0, 0); }
+  10% { transform: translate(-5%, -10%); }
+  30% { transform: translate(3%, -15%); }
+  50% { transform: translate(12%, 9%); }
+  70% { transform: translate(9%, 4%); }
+  90% { transform: translate(-1%, 7%); }
+}
+
+@keyframes spotlight {
+  0% { opacity: 0; transform: translate(-72%, -62%) scale(0.5); }
+  100% { opacity: 1; transform: translate(-50%, -40%) scale(1); }
+}
+
+@keyframes borderGlow {
+  0%, 100% { border-color: rgba(99, 102, 241, 0.08); }
+  50% { border-color: rgba(99, 102, 241, 0.2); }
+}
+
+.animate-marquee {
+  animation: marquee 40s linear infinite;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-shimmer {
+  background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.04) 50%, transparent 100%);
+  background-size: 200% 100%;
+  animation: shimmer 3s ease-in-out infinite;
+}
+
+.animate-border-glow {
+  animation: borderGlow 4s ease-in-out infinite;
+}
+
+.noise-overlay::before {
+  content: '';
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  right: -50%;
+  bottom: -50%;
+  width: 200%;
+  height: 200%;
+  background: transparent url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E") repeat;
+  pointer-events: none;
+  z-index: 1;
+  animation: grain 8s steps(10) infinite;
+  opacity: 0.15;
+}
+
+.mask-fade-x {
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.hero-grid {
+  background-image:
+    linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+  background-size: 80px 80px;
+}
+
+[data-theme="light"] .bg-surface,
+[data-theme="light"] .bg-\[\#0a0a0a\] {
+  background-color: #f8f9fa;
+}
+
+[data-theme="light"] .bg-surface-50 {
+  background-color: #ffffff;
+}
+
+[data-theme="light"] .bg-surface-100 {
+  background-color: #f1f3f5;
+}
+
+[data-theme="light"] .bg-surface-200 {
+  background-color: #e9ecef;
+}
+
+[data-theme="light"] .bg-white\/\[0\.02\],
+[data-theme="light"] .bg-white\/\[0\.03\],
+[data-theme="light"] .bg-white\/\[0\.04\],
+[data-theme="light"] .bg-white\/\[0\.05\] {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+[data-theme="light"] .ring-white\/\[0\.06\],
+[data-theme="light"] .ring-white\/\[0\.08\],
+[data-theme="light"] .border-white\/\[0\.04\],
+[data-theme="light"] .border-white\/\[0\.05\],
+[data-theme="light"] .border-white\/\[0\.06\],
+[data-theme="light"] .border-white\/\[0\.08\],
+[data-theme="light"] .border-white\/\[0\.10\] {
+  border-color: rgba(0, 0, 0, 0.08);
+  --tw-ring-color: rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="light"] .text-white {
+  color: #1a1a2e;
+}
+
+[data-theme="light"] .text-white\/90 {
+  color: rgba(26, 26, 46, 0.9);
+}
+
+[data-theme="light"] .text-white\/70 {
+  color: rgba(26, 26, 46, 0.7);
+}
+
+[data-theme="light"] .text-white\/60 {
+  color: rgba(26, 26, 46, 0.6);
+}
+
+[data-theme="light"] .text-white\/50 {
+  color: rgba(26, 26, 46, 0.5);
+}
+
+[data-theme="light"] .text-white\/40 {
+  color: rgba(26, 26, 46, 0.4);
+}
+
+[data-theme="light"] .text-white\/30 {
+  color: rgba(26, 26, 46, 0.3);
+}
+
+[data-theme="light"] .text-white\/25 {
+  color: rgba(26, 26, 46, 0.25);
+}
+
+[data-theme="light"] .text-white\/20 {
+  color: rgba(26, 26, 46, 0.2);
+}
+
+[data-theme="light"] .placeholder\:text-white\/25::placeholder {
+  color: rgba(26, 26, 46, 0.25);
+}
+
+[data-theme="light"] .bg-black\/70 {
+  background-color: rgba(248, 249, 250, 0.85);
+}
+
+[data-theme="light"] .border-white\/\[0\.04\] {
+  border-color: rgba(0, 0, 0, 0.06);
+}
+
+[data-theme="light"] .bg-white {
+  background-color: #1a1a2e;
+}
+
+[data-theme="light"] .bg-white .text-black {
+  color: #ffffff;
+}
+
+[data-theme="light"] .hero-grid {
+  background-image:
+    linear-gradient(rgba(0,0,0,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,0.04) 1px, transparent 1px);
+}
+
+[data-theme="light"] .noise-overlay::before {
+  opacity: 0.1;
+}
+
+[data-theme="light"] select option {
+  background-color: #f1f3f5;
+  color: #1a1a2e;
+}

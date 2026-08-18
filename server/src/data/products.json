@@ -1,0 +1,482 @@
+[
+  {
+    "id": "1",
+    "name": "MacBook Pro 16\" M4 Max",
+    "brand": "Apple",
+    "category": "laptop",
+    "price": 69990000,
+    "originalPrice": 74990000,
+    "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=800&q=85",
+    "gallery": [
+      "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=800&q=85",
+      "https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?w=800&q=85",
+      "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?w=800&q=85"
+    ],
+    "description": "MacBook Pro 16 inch thế hệ mới nhất với chip Apple M4 Max — sức mạnh vượt trội cho dân creative chuyên nghiệp. Chip M4 Max sở hữu CPU 16 nhân và GPU 40 nhân, mang đến hiệu năng đồ họa đáng kinh ngạc cho render 3D, chỉnh sửa video 8K và machine learning. Thiết kế nhôm nguyên khối sang trọng với màn hình Liquid Retina XDR cho độ sáng lên đến 1600 nits, hỗ trợ HDR hoàn hảo.",
+    "specs": {
+      "cpu": "Apple M4 Max 16-core",
+      "ram": "48GB Unified Memory",
+      "storage": "1TB NVMe SSD",
+      "display": "16.2\" Liquid Retina XDR 3456x2234",
+      "gpu": "40-core GPU",
+      "battery": "Lên đến 22 giờ",
+      "weight": "2.14 kg",
+      "ports": "3x Thunderbolt 5, HDMI, SD, MagSafe"
+    },
+    "stock": 15,
+    "rating": 4.9,
+    "reviews": 128,
+    "featured": true,
+    "badge": "Best Seller"
+  },
+  {
+    "id": "2",
+    "name": "ASUS ROG Strix G18",
+    "brand": "ASUS",
+    "category": "laptop",
+    "price": 52990000,
+    "originalPrice": 57990000,
+    "image": "https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=800&q=85",
+    "gallery": [
+      "https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=800&q=85",
+      "https://images.unsplash.com/photo-1603302576837-37561b2e2302?w=800&q=85",
+      "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?w=800&q=85"
+    ],
+    "description": "Laptop gaming đỉnh cao ASUS ROG Strix G18 với màn hình khổng lồ 18 inch tần số quét 240Hz. Trang bị Intel Core i9-14900HX thế hệ 14 cùng GPU NVIDIA GeForce RTX 4080 12GB — đủ sức chiến mọi tựa game AAA ở thiết lập đồ họa tối đa. Hệ thống tản nhiệt Advance Thermal với 7 ống nhiệt giữ máy luôn mát mẻ trong những pha xử lý gay cấn.",
+    "specs": {
+      "cpu": "Intel Core i9-14900HX (24C/32T)",
+      "ram": "32GB DDR5-5600",
+      "storage": "1TB PCIe 4.0 NVMe SSD",
+      "display": "18\" QHD+ 240Hz IPS-Level",
+      "gpu": "NVIDIA RTX 4080 12GB GDDR6X",
+      "battery": "Lên đến 8 giờ",
+      "weight": "3.0 kg",
+      "cooling": "ROG Intelligent Cooling"
+    },
+    "stock": 8,
+    "rating": 4.7,
+    "reviews": 95,
+    "featured": true,
+    "badge": "Gaming"
+  },
+  {
+    "id": "3",
+    "name": "Dell XPS 15 OLED",
+    "brand": "Dell",
+    "category": "laptop",
+    "price": 42990000,
+    "originalPrice": 47990000,
+    "image": "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?w=800&q=85",
+    "gallery": [
+      "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?w=800&q=85",
+      "https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=800&q=85",
+      "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=800&q=85"
+    ],
+    "description": "Dell XPS 15 là sự kết hợp hoàn hảo giữa thiết kế sang trọng và hiệu năng mạnh mẽ. Màn hình OLED 3.5K cho màu sắc rực rỡ với độ tương phản vô cực, lý tưởng cho đồ họa và giải trí. Viền màn hình siêu mỏng InfinityEdge tạo nên vẻ đẹp tối giản. Vỏ nhôm CNC và carbon fiber mang lại cảm giác cao cấp khi chạm vào.",
+    "specs": {
+      "cpu": "Intel Core i7-14700H (20C/28T)",
+      "ram": "16GB DDR5-5600",
+      "storage": "512GB PCIe 4.0 NVMe SSD",
+      "display": "15.6\" 3.5K OLED 400 nits",
+      "gpu": "NVIDIA RTX 4060 8GB GDDR6",
+      "battery": "Lên đến 13 giờ",
+      "weight": "1.86 kg",
+      "ports": "2x Thunderbolt 4, SD, USB-C"
+    },
+    "stock": 22,
+    "rating": 4.6,
+    "reviews": 76,
+    "featured": true,
+    "badge": "Premium"
+  },
+  {
+    "id": "4",
+    "name": "Custom PC RTX 4090 Creator Edition",
+    "brand": "Custom Build",
+    "category": "desktop",
+    "price": 89990000,
+    "originalPrice": 95990000,
+    "image": "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?w=800&q=85",
+    "gallery": [
+      "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?w=800&q=85",
+      "https://images.unsplash.com/photo-1591488320449-011701bb6704?w=800&q=85",
+      "https://images.unsplash.com/photo-1555617981-dac3880eac6e?w=800&q=85"
+    ],
+    "description": "Workstation đẳng cấp với GPU mạnh nhất thế giới — NVIDIA RTX 4090 24GB. Được lắp ráp tỉ mỉ với các thành phần cao cấp nhất, PC này sẵn sàng xử lý mọi tác vụ từ render 3D, biên tập video 8K, AI/ML training cho đến gaming 4K max settings. Case tempered glass hiển thị hệ thống ARGB rực rỡ.",
+    "specs": {
+      "cpu": "Intel Core i9-14900K (24C/32T, 6.0GHz)",
+      "ram": "64GB DDR5-6000MHz CL30",
+      "storage": "2TB PCIe 5.0 NVMe SSD (12GB/s)",
+      "display": "N/A (Không kèm màn hình)",
+      "gpu": "NVIDIA RTX 4090 24GB GDDR6X",
+      "psu": "Corsair 1200W 80Plus Platinum",
+      "cooling": "NZXT Kraken X73 RGB 360mm AIO",
+      "case": "Lian Li O11 Dynamic EVO"
+    },
+    "stock": 5,
+    "rating": 5.0,
+    "reviews": 42,
+    "featured": true,
+    "badge": "Flagship"
+  },
+  {
+    "id": "5",
+    "name": "Lenovo Legion Tower 7i",
+    "brand": "Lenovo",
+    "category": "desktop",
+    "price": 55990000,
+    "originalPrice": null,
+    "image": "https://images.unsplash.com/photo-1591488320449-011701bb6704?w=800&q=85",
+    "gallery": [
+      "https://images.unsplash.com/photo-1591488320449-011701bb6704?w=800&q=85",
+      "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?w=800&q=85",
+      "https://images.unsplash.com/photo-1555617981-dac3880eac6e?w=800&q=85"
+    ],
+    "description": "Desktop gaming mạnh mẽ từ Lenovo với thiết kế tối giản nhưng đầy sức mạnh. Lenovo Legion Tower 7i trang bị Intel Core i7-14700KF và RTX 4070 Ti, đủ sức chiến mọi game ở độ phân giải 1440p với frame rate cực cao. Hệ thống tản nhiệt Arctic Front giữ cho các linh kiện luôn hoạt động ở nhiệt độ tối ưu.",
+    "specs": {
+      "cpu": "Intel Core i7-14700KF (20C/28T)",
+      "ram": "32GB DDR5-5600",
+      "storage": "1TB NVMe SSD + 2TB HDD 7200RPM",
+      "display": "N/A (Không kèm màn hình)",
+      "gpu": "NVIDIA RTX 4070 Ti 12GB GDDR6X",
+      "psu": "850W 80Plus Gold",
+      "cooling": "Arctic Front 240mm Liquid Cooling",
+      "case": "Legion Tower ARGB Glass"
+    },
+    "stock": 12,
+    "rating": 4.5,
+    "reviews": 63,
+    "featured": false,
+    "badge": null
+  },
+  {
+    "id": "6",
+    "name": "Samsung Odyssey OLED G8 34\"",
+    "brand": "Samsung",
+    "category": "monitor",
+    "price": 24990000,
+    "originalPrice": 28990000,
+    "image": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=800&q=85",
+    "gallery": [
+      "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=800&q=85",
+      "https://images.unsplash.com/photo-1585792180666-f7347c490ee2?w=800&q=85",
+      "https://images.unsplash.com/photo-1593062096033-9a26b09da705?w=800&q=85"
+    ],
+    "description": "Màn hình siêu rộng OLED đầu tiên từ Samsung — Odyssey OLED G8 mang đến trải nghiệm hình ảnh đỉnh cao. Tấm nền QD-OLED cho màu sắc rực rỡ, độ tương phản vô cực và thời gian phản hồi nhanh nhất 0.03ms. Thiết kế UltraWide 34 inch cong 1800R bao trùm tầm nhìn, hoàn hảo cho cả gaming lẫn productivity.",
+    "specs": {
+      "size": "34\" UltraWide (1800R Curved)",
+      "resolution": "3440 x 1440 UWQHD",
+      "refreshRate": "175Hz (OC)",
+      "responseTime": "0.03ms GtG",
+      "panel": "Samsung QD-OLED",
+      "hdr": "DisplayHDR True Black 400",
+      "ports": "HDMI 2.1, DisplayPort 1.4, USB-C 65W",
+      "stand": "Height, Tilt, Swivel adjustable"
+    },
+    "stock": 18,
+    "rating": 4.8,
+    "reviews": 89,
+    "featured": true,
+    "badge": "Hot"
+  },
+  {
+    "id": "7",
+    "name": "Logitech MX Master 3S",
+    "brand": "Logitech",
+    "category": "accessory",
+    "price": 2490000,
+    "originalPrice": 2990000,
+    "image": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=800&q=85",
+    "gallery": [
+      "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=800&q=85",
+      "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?w=800&q=85",
+      "https://images.unsplash.com/photo-1586349906319-47f0de048105?w=800&q=85"
+    ],
+    "description": "Chuột không dây công thái học tốt nhất thế giới từ Logitech. MX Master 3S được thiết kế cho dân văn phòng và creative professionals với cảm biến 8000 DPI, MagSpeed scroll siêu nhanh (1000 dòng/giây). Phím bấm yên tĩnh hơn 90% so với thế hệ trước. Hỗ trợ kết nối đồng thời 3 thiết bị qua Bluetooth và Logi Bolt.",
+    "specs": {
+      "sensor": "8000 DPI Optical",
+      "connectivity": "Bluetooth + USB-C + Logi Bolt",
+      "battery": "Lên đến 70 ngày (sạc USB-C)",
+      "weight": "141g",
+      "buttons": "7 nút lập trình được",
+      "compatibility": "Windows, macOS, Linux, iPadOS",
+      "scroll": "MagSpeed Electromagnetic",
+      "features": "App-Specific Profiles, Flow cross-device"
+    },
+    "stock": 45,
+    "rating": 4.7,
+    "reviews": 210,
+    "featured": false,
+    "badge": null
+  },
+  {
+    "id": "8",
+    "name": "Razer BlackWidow V4 Pro",
+    "brand": "Razer",
+    "category": "accessory",
+    "price": 5490000,
+    "originalPrice": null,
+    "image": "https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?w=800&q=85",
+    "gallery": [
+      "https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?w=800&q=85",
+      "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=800&q=85",
+      "https://images.unsplash.com/photo-1595225476474-87563907a212?w=800&q=85"
+    ],
+    "description": "Bàn phím cơ cao cấp nhất từ Razer — BlackWidow V4 Pro với đầy đủ tính năng cho game thủ và power user. Razer Green Mechanical Switch cho cảm giác gõ phím rõ ràng, отзыв nhanh. Hệ thống RGB Chroma 16.8 triệu màu đồng bộ với game. Command Dial đa chức năng và wrist rest từ tính êm ái.",
+    "specs": {
+      "switch": "Razer Green Mechanical (Clicky)",
+      "layout": "Full-size ANSI",
+      "backlight": "Razer Chroma RGB 16.8M colors",
+      "connection": "USB-C braided cable (detachable)",
+      "features": "Command Dial, 8 Macro Keys, Multi-Function Wheel",
+      "wristRest": "Magnetic plush leatherette",
+      "keycaps": "Doubleshot ABS",
+      "numpad": "Có, tích hợp calculator mode"
+    },
+    "stock": 30,
+    "rating": 4.6,
+    "reviews": 156,
+    "featured": false,
+    "badge": null
+  },
+  {
+    "id": "9",
+    "name": "MacBook Air 15\" M3",
+    "brand": "Apple",
+    "category": "laptop",
+    "price": 35990000,
+    "originalPrice": 39990000,
+    "image": "https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?w=800&q=85",
+    "gallery": [
+      "https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?w=800&q=85",
+      "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=800&q=85",
+      "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?w=800&q=85"
+    ],
+    "description": "MacBook Air 15 inch mỏng nhẹ hoàn hảo cho cả công việc lẫn giải trí. Chip Apple M3 8 nhân mang đến hiệu năng ấn tượng với mức tiêu thụ điện năng cực thấp. Thiết kế siêu mỏng chỉ 11.5mm, nặng vỏ có 1.51kg — dễ dàng mang theo mọi nơi. Màn hình Liquid Retina 15.3 inch rộng rãi cho không gian làm việc thoải mái.",
+    "specs": {
+      "cpu": "Apple M3 8-core (4P + 4E)",
+      "ram": "16GB Unified Memory",
+      "storage": "512GB NVMe SSD",
+      "display": "15.3\" Liquid Retina 2880x1864",
+      "gpu": "10-core GPU",
+      "battery": "Lên đến 18 giờ",
+      "weight": "1.51 kg",
+      "thickness": "11.5 mm"
+    },
+    "stock": 25,
+    "rating": 4.8,
+    "reviews": 182,
+    "featured": false,
+    "badge": "Sale"
+  },
+  {
+    "id": "10",
+    "name": "LG UltraGear 27\" 4K Nano IPS",
+    "brand": "LG",
+    "category": "monitor",
+    "price": 15990000,
+    "originalPrice": 18990000,
+    "image": "https://images.unsplash.com/photo-1585792180666-f7347c490ee2?w=800&q=85",
+    "gallery": [
+      "https://images.unsplash.com/photo-1585792180666-f7347c490ee2?w=800&q=85",
+      "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=800&q=85",
+      "https://images.unsplash.com/photo-1593062096033-9a26b09da705?w=800&q=85"
+    ],
+    "description": "Màn hình gaming 4K đỉnh cao từ LG với tấm nền Nano IPS cho góc nhìn rộng và màu sắc chính xác. Tần số quét 144Hz kết hợp thời gian phản hồi 1ms mang đến trải nghiệm gaming mượt mà, không tear hay stutter nhờ AMD FreeSync Premium Pro. Chứng nhận VESA DisplayHDR 600 cho HDR sống động.",
+    "specs": {
+      "size": "27\" Flat IPS",
+      "resolution": "3840 x 2160 4K UHD",
+      "refreshRate": "144Hz (OC 160Hz)",
+      "responseTime": "1ms GtG",
+      "panel": "LG Nano IPS",
+      "hdr": "VESA DisplayHDR 600",
+      "ports": "HDMI 2.1 x2, DisplayPort 1.4, USB 3.0 Hub",
+      "stand": "Height, Tilt, Swivel, Pivot"
+    },
+    "stock": 20,
+    "rating": 4.6,
+    "reviews": 134,
+    "featured": false,
+    "badge": null
+  },
+  {
+    "id": "11",
+    "name": "Custom PC RTX 4070 Super Workstation",
+    "brand": "Custom Build",
+    "category": "desktop",
+    "price": 42990000,
+    "originalPrice": null,
+    "image": "https://images.unsplash.com/photo-1555617981-dac3880eac6e?w=800&q=85",
+    "gallery": [
+      "https://images.unsplash.com/photo-1555617981-dac3880eac6e?w=800&q=85",
+      "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?w=800&q=85",
+      "https://images.unsplash.com/photo-1591488320449-011701bb6704?w=800&q=85"
+    ],
+    "description": "Workstation chuyên nghiệp cho creative pros với AMD Ryzen 9 7950X — 16 nhân 32 luồng xử lý đa tác vụ cực mạnh. RTX 4070 Super 12GB đảm nhiệm mọi tác vụ GPU từ render Blender, Premiere Pro đến SolidWorks. 64GB RAM DDR5 thoải mái mở hàng chục ứng dụng heavy cùng lúc.",
+    "specs": {
+      "cpu": "AMD Ryzen 9 7950X (16C/32T, 5.7GHz)",
+      "ram": "64GB DDR5-5200 CL40",
+      "storage": "2TB PCIe 4.0 NVMe SSD (7GB/s)",
+      "display": "N/A (Không kèm màn hình)",
+      "gpu": "NVIDIA RTX 4070 Super 12GB GDDR6X",
+      "psu": "Corsair RM850x 850W 80Plus Gold",
+      "cooling": "Noctua NH-D15 Chromax",
+      "case": "Fractal Design Define 7"
+    },
+    "stock": 7,
+    "rating": 4.7,
+    "reviews": 38,
+    "featured": false,
+    "badge": null
+  },
+  {
+    "id": "12",
+    "name": "Sony WH-1000XM5",
+    "brand": "Sony",
+    "category": "accessory",
+    "price": 7990000,
+    "originalPrice": 9490000,
+    "image": "https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?w=800&q=85",
+    "gallery": [
+      "https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?w=800&q=85",
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&q=85",
+      "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=800&q=85"
+    ],
+    "description": "Tai nghe chống ồn tốt nhất thế giới — Sony WH-1000XM5 với công nghệ ANC V1 mới nhất. Chip V1 xử lý âm thanh thông minh, loại bỏ 98% tiếng ồn môi trường. Chất âm chi tiết, bass sâu với hỗ trợ LDAC cho âm thanh Hi-Res. Thiết kế nhẹ chỉ 250g, đeo cả ngày không mỏi. Bluetooth 5.2 Multipoint kết nối 2 thiết bị cùng lúc.",
+    "specs": {
+      "type": "Over-ear Wireless ANC",
+      "driver": "30mm Carbon Fiber Composite",
+      "anc": "Sony V1 Chip — Industry-leading ANC",
+      "battery": "Lên đến 30 giờ (ANC on)",
+      "codec": "LDAC, AAC, SBC",
+      "weight": "250g",
+      "bluetooth": "5.2 Multipoint (2 devices)",
+      "features": "Speak-to-Chat, Quick Attention, DSEE Extreme"
+    },
+    "stock": 35,
+    "rating": 4.8,
+    "reviews": 320,
+    "featured": false,
+    "badge": "Sale"
+  },
+  {
+    "id": "13",
+    "name": "MSI Gaming GeForce RTX 4070 Ti SUPER",
+    "brand": "MSI",
+    "category": "accessory",
+    "price": 21990000,
+    "originalPrice": 24990000,
+    "image": "https://images.unsplash.com/photo-1591488320449-011701bb6704?w=800&q=85",
+    "gallery": [
+      "https://images.unsplash.com/photo-1591488320449-011701bb6704?w=800&q=85",
+      "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?w=800&q=85",
+      "https://images.unsplash.com/photo-1555617981-dac3880eac6e?w=800&q=85"
+    ],
+    "description": "Card đồ họa cao cấp MSI Gaming X Slim với GPU NVIDIA RTX 4070 Ti SUPER. 16GB GDDR6X VRAM cho phép xử lý texture khổng lồ ở 4K. Hệ thống tản nhiệt TRI FROZR 3 với 3 quạt TORX 5.0 giữ nhiệt độ thấp và hoạt động êm ái. Hỗ trợ Ray Tracing và DLSS 3 cho hình ảnh chân thực.",
+    "specs": {
+      "gpu": "NVIDIA RTX 4070 Ti SUPER",
+      "vram": "16GB GDDR6X 256-bit",
+      "boost": "2640 MHz (MSI OC)",
+      "cooling": "TRI FROZR 3 — 3x TORX 5.0 Fans",
+      "ports": "3x DP 1.4a, 1x HDMI 2.1a",
+      "power": "285W (2x 8-pin)",
+      "recommended_psu": "750W",
+      "size": "307 x 125 x 52 mm (3.25 slots)"
+    },
+    "stock": 14,
+    "rating": 4.7,
+    "reviews": 67,
+    "featured": true,
+    "badge": "New"
+  },
+  {
+    "id": "14",
+    "name": "Keychron Q1 Max HE",
+    "brand": "Keychron",
+    "category": "accessory",
+    "price": 4990000,
+    "originalPrice": null,
+    "image": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=800&q=85",
+    "gallery": [
+      "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=800&q=85",
+      "https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?w=800&q=85",
+      "https://images.unsplash.com/photo-1595225476474-87563907a212?w=800&q=85"
+    ],
+    "description": "Bàn phím cơ cao cấp Keychron Q1 Max HE với Hall Effect switches cho phép điều chỉnh actuation point chính xác đến 0.1mm. Vỏ nhôm nguyên khối CNC mang lại cảm giác chắc chắn và premium. Kết nối không dây 2.4GHz, Bluetooth và USB-C wired. QMK/VIA programmable cho phép tùy chỉnh phím không giới hạn.",
+    "specs": {
+      "switch": "Gateron Hall Effect (adjustable)",
+      "layout": "75% (82 keys)",
+      "connection": "2.4GHz / Bluetooth 5.1 / USB-C",
+      "battery": "4000mAh (lên đến 200 giờ)",
+      "case": "CNC Aluminum Double Gasket Mount",
+      "keycaps": "Cherry profile PBT Double-shot",
+      "backlight": "South-facing RGB",
+      "firmware": "QMK/VIA programmable"
+    },
+    "stock": 20,
+    "rating": 4.9,
+    "reviews": 94,
+    "featured": false,
+    "badge": null
+  },
+  {
+    "id": "15",
+    "name": "ASUS ProArt Station PD5",
+    "brand": "ASUS",
+    "category": "desktop",
+    "price": 48990000,
+    "originalPrice": 54990000,
+    "image": "https://images.unsplash.com/photo-1555617981-dac3880eac6e?w=800&q=85",
+    "gallery": [
+      "https://images.unsplash.com/photo-1555617981-dac3880eac6e?w=800&q=85",
+      "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?w=800&q=85",
+      "https://images.unsplash.com/photo-1591488320449-011701bb6704?w=800&q=85"
+    ],
+    "description": "Workstation chuyên dụng cho creative professionals từ ASUS ProArt. Được thiết kế đặc biệt cho video editing, 3D rendering và graphic design với chứng nhận ISV. Intel Xeon W-2400 series CPU và RTX A4000 professional GPU đảm bảo stability cho các phần mềm chuyên ngành như Adobe, Autodesk, DaVinci Resolve.",
+    "specs": {
+      "cpu": "Intel Xeon w5-2455X (12C/24T)",
+      "ram": "64GB ECC DDR5-4800",
+      "storage": "2TB NVMe + 4TB HDD",
+      "display": "N/A (Không kèm màn hình)",
+      "gpu": "NVIDIA RTX A4000 16GB Professional",
+      "psu": "1000W 80Plus Platinum",
+      "os": "Windows 11 Pro for Workstations",
+      "certification": "ISV Certified (Adobe, Autodesk, SolidWorks)"
+    },
+    "stock": 4,
+    "rating": 4.8,
+    "reviews": 28,
+    "featured": false,
+    "badge": "Pro"
+  },
+  {
+    "id": "16",
+    "name": "Dell UltraSharp U2723QE 4K USB-C Hub",
+    "brand": "Dell",
+    "category": "monitor",
+    "price": 12990000,
+    "originalPrice": 15990000,
+    "image": "https://images.unsplash.com/photo-1593062096033-9a26b09da705?w=800&q=85",
+    "gallery": [
+      "https://images.unsplash.com/photo-1593062096033-9a26b09da705?w=800&q=85",
+      "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=800&q=85",
+      "https://images.unsplash.com/photo-1585792180666-f7347c490ee2?w=800&q=85"
+    ],
+    "description": "Màn hình 4K chuyên dụng cho dân văn phòng từ Dell UltraSharp series. Tấm nền IPS Black mới nhất cho độ tương phản gấp 4 lần IPS thông thường. Tích hợp USB-C hub với power delivery 90W — chỉ cần 1 sợi cáp cho cả hình ảnh, dữ liệu và sạc laptop. Color accuracy Delta E < 2, CalReady sẵn sàng cho công việc màu sắc chính xác.",
+    "specs": {
+      "size": "27\" Flat IPS Black",
+      "resolution": "3840 x 2160 4K UHD",
+      "refreshRate": "60Hz",
+      "responseTime": "5ms (Fast Mode)",
+      "panel": "LG IPS Black Technology",
+      "color": "100% sRGB, 98% DCI-P3, Delta E<2",
+      "ports": "USB-C 90W PD, HDMI, DP, USB 3.2 Hub, RJ45",
+      "stand": "Height, Tilt, Swivel, Pivot + VESA"
+    },
+    "stock": 28,
+    "rating": 4.5,
+    "reviews": 167,
+    "featured": false,
+    "badge": null
+  }
+]

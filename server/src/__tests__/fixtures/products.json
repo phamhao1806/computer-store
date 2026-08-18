@@ -1,0 +1,47 @@
+[
+  {
+    "id": "1",
+    "name": "Test Laptop",
+    "brand": "BrandA",
+    "category": "laptop",
+    "price": 30000000,
+    "originalPrice": 35000000,
+    "image": "test.jpg",
+    "description": "A test laptop for testing",
+    "specs": { "cpu": "Test CPU", "ram": "16GB" },
+    "stock": 10,
+    "rating": 4.5,
+    "reviews": 20,
+    "featured": true
+  },
+  {
+    "id": "2",
+    "name": "Test Desktop",
+    "brand": "BrandB",
+    "category": "desktop",
+    "price": 50000000,
+    "originalPrice": 55000000,
+    "image": "test2.jpg",
+    "description": "A test desktop for testing",
+    "specs": { "cpu": "Test CPU 2", "ram": "32GB" },
+    "stock": 5,
+    "rating": 4.0,
+    "reviews": 10,
+    "featured": false
+  },
+  {
+    "id": "3",
+    "name": "Test Monitor",
+    "brand": "BrandA",
+    "category": "monitor",
+    "price": 15000000,
+    "originalPrice": 18000000,
+    "image": "test3.jpg",
+    "description": "A test monitor for testing",
+    "specs": { "size": "27 inch", "resolution": "4K" },
+    "stock": 8,
+    "rating": 4.8,
+    "reviews": 5,
+    "featured": true
+  }
+]

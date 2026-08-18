@@ -1,0 +1,23 @@
+[
+  {
+    "id": "ORD-EXAMPLE-001",
+    "userId": null,
+    "userEmail": null,
+    "customer": {
+      "name": "Nguyen Van A",
+      "phone": "0900000000",
+      "address": "123 Nguyen Hue, Q.1, TP.HCM"
+    },
+    "items": [
+      {
+        "id": "1",
+        "name": "MacBook Pro 16\" M4 Max",
+        "price": 69990000,
+        "quantity": 1
+      }
+    ],
+    "total": 69990000,
+    "status": "pending",
+    "createdAt": "2026-01-01T00:00:00.000Z"
+  }
+]

@@ -1,0 +1,20 @@
+node_modules/
+dist/
+.env
+.env.local
+*.pem
+*.key
+.DS_Store
+
+# Internal tooling (not part of the public project)
+.opencode/
+.agents/
+hooks/
+references/
+agents/
+*.zip
+
+# Runtime data containing PII (use *.example.json for format reference)
+server/src/data/users.json
+server/src/data/orders.json
+server/src/data/reviews.json
