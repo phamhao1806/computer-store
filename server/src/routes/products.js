@@ -1,24 +1,10 @@
 import { Router } from 'express';
-import fs from 'fs/promises';
-import { fileURLToPath } from 'url';
-import { dirname, join } from 'path';
 import { v4 as uuidv4 } from 'uuid';
 import { authMiddleware, adminOnly } from '../middleware/auth.js';
+import { readCollection, writeCollection } from '../utils/db.js';
+import { VALID_CATEGORIES, ALLOWED_FIELDS } from '../constants.js';
 
 const router = Router();
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-
-const productsPath = join(__dirname, '..', 'data', 'products.json');
-
-const VALID_CATEGORIES = ['laptop', 'desktop', 'monitor', 'accessory'];
-const ALLOWED_FIELDS = ['name', 'brand', 'category', 'price', 'originalPrice', 'image', 'description', 'stock', 'featured', 'badge', 'specs'];
-
-const readProducts = async () => {
-  const data = await fs.readFile(productsPath, 'utf-8');
-  return JSON.parse(data);
-};
-const writeProducts = (data) => fs.writeFile(productsPath, JSON.stringify(data, null, 2));
 
 const sanitizeString = (str) => {
   if (typeof str !== 'string') return str;
@@ -27,7 +13,7 @@ const sanitizeString = (str) => {
 
 router.get('/', async (req, res) => {
   try {
-    const products = await readProducts();
+    const products = await readCollection('products');
     const { category, brand, search, sort, minPrice, maxPrice, featured } = req.query;
 
     let filtered = [...products];
@@ -69,7 +55,7 @@ router.get('/', async (req, res) => {
 
 router.get('/:id', async (req, res) => {
   try {
-    const products = await readProducts();
+    const products = await readCollection('products');
     const product = products.find(p => p.id === req.params.id);
     if (!product) return res.status(404).json({ message: 'Product not found' });
     res.json(product);
@@ -100,10 +86,10 @@ router.post('/', authMiddleware, adminOnly, async (req, res) => {
     data.description = sanitizeString(data.description || '');
     if (data.badge) data.badge = sanitizeString(data.badge);
 
-    const products = await readProducts();
+    const products = await readCollection('products');
     const newProduct = { id: uuidv4(), ...data, rating: 0, reviews: 0 };
     products.push(newProduct);
-    await writeProducts(products);
+    await writeCollection('products', products);
     res.status(201).json(newProduct);
   } catch (err) {
     res.status(500).json({ message: 'Failed to create product' });
@@ -129,11 +115,11 @@ router.put('/:id', authMiddleware, adminOnly, async (req, res) => {
     if (data.description) data.description = sanitizeString(data.description);
     if (data.badge) data.badge = sanitizeString(data.badge);
 
-    const products = await readProducts();
+    const products = await readCollection('products');
     const idx = products.findIndex(p => p.id === req.params.id);
     if (idx === -1) return res.status(404).json({ message: 'Product not found' });
     products[idx] = { ...products[idx], ...data };
-    await writeProducts(products);
+    await writeCollection('products', products);
     res.json(products[idx]);
   } catch (err) {
     res.status(500).json({ message: 'Failed to update product' });
@@ -142,10 +128,10 @@ router.put('/:id', authMiddleware, adminOnly, async (req, res) => {
 
 router.delete('/:id', authMiddleware, adminOnly, async (req, res) => {
   try {
-    const products = await readProducts();
+    const products = await readCollection('products');
     const filtered = products.filter(p => p.id !== req.params.id);
     if (filtered.length === products.length) return res.status(404).json({ message: 'Product not found' });
-    await writeProducts(filtered);
+    await writeCollection('products', filtered);
     res.json({ message: 'Deleted' });
   } catch (err) {
     res.status(500).json({ message: 'Failed to delete product' });

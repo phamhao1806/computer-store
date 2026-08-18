@@ -3,9 +3,7 @@ import { useCart } from '../context/CartContext';
 import { useAuth } from '../context/AuthContext';
 import { createOrder } from '../services/api';
 import { useState } from 'react';
-
-const formatPrice = (price) =>
-  new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(price);
+import { formatPrice } from '../utils/format';
 
 export default function Cart() {
   const { items, removeItem, updateQuantity, total, count, clearCart } = useCart();

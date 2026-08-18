@@ -2,9 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useCart } from '../context/CartContext';
 import { useQuickView } from '../context/QuickViewContext';
-
-const formatPrice = (price) =>
-  new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(price);
+import { formatPrice } from '../utils/format';
 
 export default function QuickViewModal() {
   const { product, close } = useQuickView();

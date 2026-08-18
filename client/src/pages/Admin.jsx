@@ -1,9 +1,8 @@
 import { useState, useEffect } from 'react';
 import { useAuth } from '../context/AuthContext';
 import { fetchProducts, fetchOrders, deleteProduct, createProduct, updateProduct, updateOrderStatus } from '../services/api';
-
-const formatPrice = (price) =>
-  new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(price);
+import { formatPrice } from '../utils/format';
+import { ORDER_STATUS_LABELS, ORDER_STATUS_COLORS, CATEGORIES } from '../constants';
 
 const emptyProduct = {
   name: '', brand: '', category: 'laptop', price: '', originalPrice: '',
@@ -70,22 +69,6 @@ export default function Admin() {
   const handleOrderStatus = async (id, status) => {
     const updated = await updateOrderStatus(id, status, token);
     setOrders(orders.map((o) => (o.id === id ? updated : o)));
-  };
-
-  const statusColors = {
-    pending: 'bg-yellow-400/10 text-yellow-400',
-    processing: 'bg-blue-400/10 text-blue-400',
-    shipped: 'bg-purple-400/10 text-purple-400',
-    delivered: 'bg-mint/10 text-mint',
-    cancelled: 'bg-coral/10 text-coral',
-  };
-
-  const statusLabels = {
-    pending: 'Chờ xử lý',
-    processing: 'Đang xử lý',
-    shipped: 'Đang giao',
-    delivered: 'Đã giao',
-    cancelled: 'Đã hủy',
   };
 
   return (
@@ -159,10 +142,10 @@ export default function Admin() {
                       onChange={(e) => setForm({ ...form, category: e.target.value })}
                       className="w-full px-4 py-3 rounded-xl bg-white/[0.04] border border-white/[0.06] text-white text-sm focus:outline-none focus:ring-1 focus:ring-accent/50 appearance-none"
                     >
-                      <option value="laptop" className="bg-surface-100">Laptop</option>
-                      <option value="desktop" className="bg-surface-100">Desktop</option>
-                      <option value="monitor" className="bg-surface-100">Màn hình</option>
-                      <option value="accessory" className="bg-surface-100">Phụ kiện</option>
+                      <option value="" className="bg-surface-100">Chọn danh mục</option>
+                      {CATEGORIES.map((c) => (
+                        <option key={c.value} value={c.value} className="bg-surface-100">{c.label}</option>
+                      ))}
                     </select>
                   </div>
                   <div className="flex items-end">
@@ -241,15 +224,15 @@ export default function Admin() {
                       <p className="text-xs text-white/20">{order.customer.address}</p>
                     </div>
                     <div className="flex items-center gap-3">
-                      <span className={`px-3 py-1 rounded-full text-[10px] uppercase tracking-[0.1em] font-semibold ${statusColors[order.status]}`}>
-                        {statusLabels[order.status]}
+                      <span className={`px-3 py-1 rounded-full text-[10px] uppercase tracking-[0.1em] font-semibold ${ORDER_STATUS_COLORS[order.status]}`}>
+                        {ORDER_STATUS_LABELS[order.status]}
                       </span>
                       <select
                         value={order.status}
                         onChange={(e) => handleOrderStatus(order.id, e.target.value)}
                         className="px-2 py-1 rounded-lg bg-white/5 border border-white/[0.06] text-xs text-white/50 appearance-none cursor-pointer focus:outline-none"
                       >
-                        {Object.entries(statusLabels).map(([k, v]) => (
+                        {Object.entries(ORDER_STATUS_LABELS).map(([k, v]) => (
                           <option key={k} value={k} className="bg-surface-100">{v}</option>
                         ))}
                       </select>

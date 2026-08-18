@@ -2,9 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { fetchProducts } from '../services/api';
 import ProductCard from '../components/ProductCard';
-
-const formatPrice = (price) =>
-  new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(price);
+import { formatPrice } from '../utils/format';
 
 const brands = [
   'ASUS', 'MSI', 'Lenovo', 'Apple', 'Dell', 'HP', 'Acer', 'Razer',

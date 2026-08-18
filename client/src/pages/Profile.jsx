@@ -2,25 +2,8 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { fetchMyOrders } from '../services/api';
-
-const formatPrice = (price) =>
-  new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(price);
-
-const statusColors = {
-  pending: 'bg-yellow-400/10 text-yellow-400',
-  processing: 'bg-blue-400/10 text-blue-400',
-  shipped: 'bg-purple-400/10 text-purple-400',
-  delivered: 'bg-emerald-400/10 text-emerald-400',
-  cancelled: 'bg-coral/10 text-coral',
-};
-
-const statusLabels = {
-  pending: 'Chờ xử lý',
-  processing: 'Đang xử lý',
-  shipped: 'Đang giao',
-  delivered: 'Đã giao',
-  cancelled: 'Đã hủy',
-};
+import { formatPrice } from '../utils/format';
+import { ORDER_STATUS_LABELS, ORDER_STATUS_COLORS } from '../constants';
 
 export default function Profile() {
   const { user, token } = useAuth();
@@ -148,8 +131,8 @@ export default function Profile() {
                           {new Date(order.createdAt).toLocaleString('vi-VN')}
                         </p>
                       </div>
-                      <span className={`px-3 py-1 rounded-full text-[10px] uppercase tracking-[0.1em] font-semibold ${statusColors[order.status]}`}>
-                        {statusLabels[order.status]}
+                      <span className={`px-3 py-1 rounded-full text-[10px] uppercase tracking-[0.1em] font-semibold ${ORDER_STATUS_COLORS[order.status]}`}>
+                        {ORDER_STATUS_LABELS[order.status]}
                       </span>
                     </div>
 

@@ -14,6 +14,9 @@ references/
 agents/
 *.zip
 
+# Internal planning workflow docs
+docs/plans/
+
 # Runtime data containing PII (use *.example.json for format reference)
 server/src/data/users.json
 server/src/data/orders.json

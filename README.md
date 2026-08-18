@@ -4,7 +4,7 @@ Website bán máy tính và thiết bị công nghệ cao cấp, được xây d
 
 - **Frontend:** React 18 + Vite 5 + Tailwind CSS v3 + React Router 6
 - **Backend:** Express 4 + JWT (jsonwebtoken) + bcryptjs
-- **Storage:** JSON files (`server/src/data/`) — dễ nâng cấp lên database
+- **Storage:** JSON files (`server/src/data/`) — seed data (`products.json`) được commit; `users.json`/`orders.json`/`reviews.json` là runtime data (đã gitignore). Truy cập tập trung qua `server/src/utils/db.js` — dễ nâng cấp lên database
 - **Design:** OLED dark theme, glassmorphism, premium UI với animations tùy chỉnh
 
 ---
@@ -54,6 +54,8 @@ computer-store/
 │   │   │                    # Login, Register, Profile, Admin, NotFound
 │   │   ├── context/         # Auth, Cart, Wishlist, Theme, QuickView, RecentlyViewed
 │   │   ├── services/        # api.js (lớp gọi API)
+│   │   ├── utils/           # format.js (formatPrice dùng chung)
+│   │   ├── constants.js     # status labels/colors, categories dùng chung
 │   │   ├── __tests__/       # Unit test (Vitest + React Testing Library)
 │   │   ├── App.jsx          # Router config
 │   │   └── main.jsx         # Entry point
@@ -64,11 +66,15 @@ computer-store/
 │   ├── src/
 │   │   ├── routes/          # products.js, auth.js, orders.js, users.js, reviews.js
 │   │   ├── middleware/      # auth.js (authMiddleware, adminOnly, optionalAuth)
-│   │   ├── data/            # products.json, orders.json, users.json
+│   │   ├── utils/           # db.js (đọc/ghi JSON tập trung — điểm duy nhất để migrate DB)
+│   │   ├── constants.js     # VALID_CATEGORIES, VALID_STATUSES, ALLOWED_FIELDS
+│   │   ├── data/            # products.json (seed data), *.example.json (format mẫu)
 │   │   ├── __tests__/       # Unit + integration test (Vitest + Supertest)
 │   │   └── index.js         # Express entry point
 │   └── .env.example
 │
+├── docs/
+│   └── reports/             # Code & security review reports
 ├── start.sh                 # Khởi động đồng thời client + server
 └── README.md
 ```
